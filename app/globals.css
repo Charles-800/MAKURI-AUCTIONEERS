@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap');
+
+:root {
+  --navy-deep: #0B1730;
+  --navy-royal: #163E72;
+  --gold-champagne: #C6A15B;
+  --gold-light: #DFC285;
+  --gold-dark: #A5823D;
+  --surface-light: #F4F6F9;
+  --surface-white: #FFFFFF;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: #1a202c;
+  background-color: #F4F6F9;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-serif-heading {
+  font-family: var(--font-serif);
+}
+
+.font-sans-body {
+  font-family: var(--font-sans);
+}
+
+/* Custom subtle luxury gold glow */
+.gold-glow {
+  box-shadow: 0 4px 20px -2px rgba(198, 161, 91, 0.25);
+}
+
+.navy-card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(11, 23, 48, 0.08);
+}
+
+/* Text balance utility */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Tabular numbers for financial and asset records */
+.tabular-data {
+  font-variant-numeric: tabular-nums;
+}
+
+/* iOS Safe Area bottom padding utility */
+.pb-safe {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}

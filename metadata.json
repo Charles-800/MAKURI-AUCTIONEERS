@@ -1,0 +1,6 @@
+{
+  "name": "Makuri Auctioneers - Mombasa, Kenya",
+  "description": "Premium auctioneering, repossession, private investigations, business consultancy, and real estate management services based in Mombasa, Kenya.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
