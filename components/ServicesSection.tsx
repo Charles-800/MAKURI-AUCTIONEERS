@@ -41,8 +41,48 @@ export const servicesData: ServiceItem[] = [
     statutoryCompliance: 'Conducted under the Auctioneers Act (Cap. 526) & Auctioneers Rules of Kenya with transparent accounting and prompt return to court / instructing principals.'
   },
   {
-    id: 'repossession',
+    id: 'court-orders',
     number: '02',
+    title: 'Execution of Court Orders',
+    subtitle: 'Judicial Enforcement & Attachment Warrants',
+    pageUrl: '/execution-of-court-orders-kenya',
+    image: '/images/hero_auction.jpg',
+    fallbackImage: '/images/about_office.jpg',
+    summary: 'Lawful execution of warrants of attachment and sale, eviction orders, distress for rent warrants, and decree enforcement issued by courts of competent jurisdiction across Kenya.',
+    highlights: [
+      'Warrants of attachment and sale of movable & immovable assets',
+      'Eviction orders execution with formal police escort & inventories',
+      'Distress for Rent Act warrants execution for commercial & residential premises',
+      'Orders of delivery, seizure, and judicial custody of chattels',
+      'Civil warrants execution and debtor surrender to court',
+      'Comprehensive, prompt returns to court with sworn affidavits of service'
+    ],
+    fullDetails: 'Makuri Auctioneers executes high-priority court decrees and warrants issued by the High Court, Employment and Labour Relations Court, Environment and Land Court, and Magistrates\' Courts across Kenya. In strict compliance with the Civil Procedure Act (Cap. 21), Order 22 of the Civil Procedure Rules, and the Auctioneers Act (Cap. 526), our officers coordinate with the National Police Service for peaceful enforcement, perform exhaustive asset cataloging, observe statutory proclamation timelines, and file authentic returns to court.',
+    statutoryCompliance: 'Executed pursuant to the Civil Procedure Act (Cap. 21), Order 22 Civil Procedure Rules, Auctioneers Act (Cap. 526), and Distress for Rent Act (Cap. 293).'
+  },
+  {
+    id: 'realization-securities',
+    number: '03',
+    title: 'Realization of Securities',
+    subtitle: 'Statutory Power of Sale & Collateral Liquidation',
+    pageUrl: '/realization-of-securities-kenya',
+    image: '/images/investigation.jpg',
+    fallbackImage: '/images/asset_recovery.jpg',
+    summary: 'Enforcement of statutory powers of sale on charged properties, mortgages, debentures, and movable collateral on behalf of commercial banks, SACCOs, microfinance institutions, and secured chargees.',
+    highlights: [
+      'Statutory power of sale enforcement under the Land Act 2012 (Sections 90–96)',
+      'Realization of charged land, commercial buildings, and industrial plants',
+      'Chattel mortgages & movable securities realization under the MPSRA 2017',
+      'Debenture enforcement, pledge liquidation, and bank collateral workouts',
+      'Independent professional valuation coordination for reserve price compliance',
+      'Preparation and service of statutory 3-month, 40-day, and 14-day auction notices'
+    ],
+    fullDetails: 'We act on behalf of leading commercial banks, Tier-1 SACCOs, asset finance companies, and corporate chargees to realize non-performing loan collateral. Our senior auctioneers oversee the rigorous statutory notification process under Sections 90 and 96 of the Land Act, verify entries in the Movable Property Security Rights Act (MPSRA) registry, conduct forced sale valuations with accredited valuers, publish nationwide gazetted auction notices, and manage transparent competitive bidding.',
+    statutoryCompliance: 'Conducted in strict compliance with the Land Act (No. 6 of 2012), Land Registration Act, Movable Property Security Rights Act (2017), and Auctioneers Rules.'
+  },
+  {
+    id: 'repossession',
+    number: '04',
     title: 'Repossession & Asset Recovery',
     subtitle: 'Lawful Collateral Retrieval Across Kenya',
     pageUrl: '/repossession-services-kenya',
@@ -62,7 +102,7 @@ export const servicesData: ServiceItem[] = [
   },
   {
     id: 'investigations',
-    number: '03',
+    number: '05',
     title: 'Private Investigation Services',
     subtitle: 'Confidential Corporate & Asset Inquiries',
     pageUrl: '/private-investigation-services-kenya',
@@ -82,7 +122,7 @@ export const servicesData: ServiceItem[] = [
   },
   {
     id: 'consultancy',
-    number: '04',
+    number: '06',
     title: 'Business Consultancy',
     subtitle: 'Strategic Advisory & Risk Mitigation',
     pageUrl: '/business-consultancy-kenya',
@@ -102,7 +142,7 @@ export const servicesData: ServiceItem[] = [
   },
   {
     id: 'real-estate',
-    number: '05',
+    number: '07',
     title: 'Real Estate Management',
     subtitle: 'Property Administration & Portfolio Marketing',
     pageUrl: '/real-estate-management-kenya',
@@ -155,11 +195,11 @@ export default function ServicesSection({ onSelectServiceForInquiry }: ServicesS
             Specialized Corporate &amp; Statutory Services
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
-            From statutory public auctions and lawful repossession to confidential corporate investigations and property management in Mombasa, Nairobi, and across Kenya.
+            From statutory public auctions, execution of court orders, and realization of securities to lawful repossession, confidential corporate investigations, and real estate management across Kenya.
           </p>
         </div>
 
-        {/* 5 Service Cards Grid: 1 col on mobile, 2 cols on tablet, 3 cols on desktop */}
+        {/* 7 Service Cards Grid: 1 col on mobile, 2 cols on tablet, 3 cols on desktop */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {servicesData.map((service) => {
             return (

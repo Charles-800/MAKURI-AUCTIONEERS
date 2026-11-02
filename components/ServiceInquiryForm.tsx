@@ -216,6 +216,8 @@ export default function ServiceInquiryForm({
                     className="w-full px-4 py-3 rounded-lg bg-slate-800/90 border border-slate-700 text-white text-sm focus:border-[#C6A15B] focus:ring-1 focus:ring-[#C6A15B] outline-none"
                   >
                     <option value="Auctioneering Services">Auctioneering Services</option>
+                    <option value="Execution of Court Orders">Execution of Court Orders</option>
+                    <option value="Realization of Securities">Realization of Securities</option>
                     <option value="Repossession & Asset Recovery">Repossession &amp; Asset Recovery</option>
                     <option value="Private Investigations">Private Investigations</option>
                     <option value="Business Consultancy">Business Consultancy</option>

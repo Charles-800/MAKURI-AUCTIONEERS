@@ -36,6 +36,18 @@ const defaultRelatedServices: RelatedItem[] = [
     tag: 'Core Service',
   },
   {
+    title: 'Execution of Court Orders Kenya',
+    href: '/execution-of-court-orders-kenya',
+    description: 'Enforcement of court decrees, warrants of attachment and sale, evictions, and distress for rent across Kenya.',
+    tag: 'Legal Enforcement',
+  },
+  {
+    title: 'Realization of Securities Kenya',
+    href: '/realization-of-securities-kenya',
+    description: 'Statutory powers of sale, bank collateral workouts, and charged land / movable asset realization.',
+    tag: 'Banking & Securities',
+  },
+  {
     title: 'Repossession Services Kenya',
     href: '/repossession-services-kenya',
     description: 'Lawful vehicle repossession, heavy plant recovery, and secured collateral enforcement under Kenyan law.',

@@ -53,6 +53,8 @@ export async function POST(req: NextRequest) {
 
     const validServices = [
       'Auctioneering Services',
+      'Execution of Court Orders',
+      'Realization of Securities',
       'Repossession & Asset Recovery',
       'Private Investigations',
       'Business Consultancy',

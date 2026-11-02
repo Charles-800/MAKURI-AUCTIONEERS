@@ -16,6 +16,8 @@ export default function Footer({ onOpenPrivacyModal, onOpenTermsModal }: FooterP
 
   const servicesList = [
     { name: 'Auctioneering Services', href: '/auctioneering-services-kenya' },
+    { name: 'Execution of Court Orders', href: '/execution-of-court-orders-kenya' },
+    { name: 'Realization of Securities', href: '/realization-of-securities-kenya' },
     { name: 'Repossession Services', href: '/repossession-services-kenya' },
     { name: 'Asset Recovery Services', href: '/asset-recovery-services-kenya' },
     { name: 'Private Investigation Services', href: '/private-investigation-services-kenya' },

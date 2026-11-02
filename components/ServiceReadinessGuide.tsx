@@ -8,7 +8,7 @@ interface ReadinessGuideProps {
 }
 
 export default function ServiceReadinessGuide({ onSelectServiceForInquiry }: ReadinessGuideProps) {
-  const [activeTab, setActiveTab] = useState<'auction' | 'repo' | 'investigation' | 'realestate'>('auction');
+  const [activeTab, setActiveTab] = useState<'auction' | 'courtOrders' | 'securities' | 'repo' | 'investigation' | 'realestate'>('auction');
 
   const readinessInfo = {
     auction: {
@@ -23,6 +23,32 @@ export default function ServiceReadinessGuide({ onSelectServiceForInquiry }: Rea
       ],
       turnaround: 'Immediate notice formulation within 24–48 hours upon verification of court/statutory documents.',
       serviceName: 'Auctioneering Services',
+    },
+    courtOrders: {
+      title: 'Execution of Court Orders Checklist',
+      desc: 'Prerequisites for instructing our licensed auctioneers on court warrants, eviction decrees, or distress execution.',
+      documents: [
+        'Original or Certified Extract of Court Decree / Judgment from High Court or Magistrates Court',
+        'Valid Warrant of Attachment and Sale issued under Order 22 of the Civil Procedure Rules',
+        'Formal Warrant of Eviction or Delivery Order signed by the designated Judicial Officer',
+        'Letter of Instruction from Advocate on Record specifying debtor and asset physical location',
+        'Police notification escort requisition for secure, peaceful field enforcement',
+      ],
+      turnaround: 'Proclamation or execution staging mobilized within 24–48 hours of warrant verification.',
+      serviceName: 'Execution of Court Orders',
+    },
+    securities: {
+      title: 'Realization of Securities Checklist',
+      desc: 'Statutory compliance requirements for commercial banks, SACCOs, and financiers liquidating collateral.',
+      documents: [
+        'Certified Registered Legal Charge / Mortgage / Chattel Security Agreement',
+        'Copy of Statutory 90-Day Notice of Default served under Section 90 of the Land Act 2012',
+        'Copy of 40-Day Notice of Intention to Sell served upon the chargor under Section 96',
+        'Recent Official Search Certificate confirming encumbrance and title ownership status',
+        'Accredited Professional Valuation Report establishing current Forced Sale Value (reserve)',
+      ],
+      turnaround: 'Statutory 14-day national newspaper advertisement scheduled upon expiry of redemption notices.',
+      serviceName: 'Realization of Securities',
     },
     repo: {
       title: 'Repossession & Collateral Recovery Checklist',
@@ -104,6 +130,26 @@ export default function ServiceReadinessGuide({ onSelectServiceForInquiry }: Rea
             }`}
           >
             Public Auctions
+          </button>
+          <button
+            onClick={() => setActiveTab('courtOrders')}
+            className={`min-h-[44px] px-4 py-2.5 text-xs sm:text-sm font-semibold rounded-lg transition-colors whitespace-nowrap shrink-0 ${
+              activeTab === 'courtOrders'
+                ? 'bg-[#0B1730] text-[#C6A15B] shadow-sm'
+                : 'text-slate-600 hover:text-slate-900 bg-slate-100'
+            }`}
+          >
+            Execution of Court Orders
+          </button>
+          <button
+            onClick={() => setActiveTab('securities')}
+            className={`min-h-[44px] px-4 py-2.5 text-xs sm:text-sm font-semibold rounded-lg transition-colors whitespace-nowrap shrink-0 ${
+              activeTab === 'securities'
+                ? 'bg-[#0B1730] text-[#C6A15B] shadow-sm'
+                : 'text-slate-600 hover:text-slate-900 bg-slate-100'
+            }`}
+          >
+            Realization of Securities
           </button>
           <button
             onClick={() => setActiveTab('repo')}

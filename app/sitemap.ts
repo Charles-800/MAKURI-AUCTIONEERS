@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/auctioneers-in-mombasa', priority: 0.95, changeFrequency: 'weekly' as const },
     { path: '/auctioneers-in-nairobi', priority: 0.95, changeFrequency: 'weekly' as const },
     { path: '/auctioneering-services-kenya', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/execution-of-court-orders-kenya', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/realization-of-securities-kenya', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/repossession-services-kenya', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/asset-recovery-services-kenya', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/private-investigation-services-kenya', priority: 0.85, changeFrequency: 'weekly' as const },

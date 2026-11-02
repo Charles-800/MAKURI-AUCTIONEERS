@@ -50,8 +50,10 @@ export default function Navbar({ onOpenPrivacyModal, onOpenTermsModal }: NavbarP
 
   const serviceLinks = [
     { name: 'Auctioneering Services', href: '/auctioneering-services-kenya', desc: 'Public auctions & asset disposal' },
+    { name: 'Execution of Court Orders', href: '/execution-of-court-orders-kenya', desc: 'Attachment warrants, evictions & distress' },
+    { name: 'Realization of Securities', href: '/realization-of-securities-kenya', desc: 'Bank & SACCO collateral liquidation' },
     { name: 'Repossession Services', href: '/repossession-services-kenya', desc: 'Vehicles, plant & equipment recovery' },
-    { name: 'Asset Recovery Services', href: '/asset-recovery-services-kenya', desc: 'Debtor tracing & collateral realization' },
+    { name: 'Asset Recovery Services', href: '/asset-recovery-services-kenya', desc: 'Debtor tracing & collateral recovery' },
     { name: 'Private Investigations', href: '/private-investigation-services-kenya', desc: 'Corporate fraud & asset tracing' },
     { name: 'Business Consultancy', href: '/business-consultancy-kenya', desc: 'Corporate strategy & recovery advisory' },
     { name: 'Real Estate Management', href: '/real-estate-management-kenya', desc: 'Property management & tenancy' },
