@@ -205,10 +205,12 @@ export default function Footer({ onOpenPrivacyModal, onOpenTermsModal }: FooterP
 
       {/* Bottom Legal & Copyright Bar */}
       <div className="border-t border-slate-800/80 bg-[#050a17] py-6 text-slate-400 text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <p>
-            &copy; {new Date().getFullYear()} Makuri Auctioneers. Founded in 1995. Mombasa &amp; Nairobi, Kenya.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-center lg:text-left">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+            <span>&copy; {new Date().getFullYear()} Makuri Auctioneers. Founded in 1995. Mombasa &amp; Nairobi, Kenya.</span>
+            <span className="hidden sm:inline text-slate-700">&bull;</span>
+            <span className="text-[#C6A15B] font-medium">Website developed by Charles websites AI</span>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <Link href="/about-us" className="hover:text-slate-200 transition-colors">
